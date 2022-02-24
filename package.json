@@ -1,0 +1,19 @@
+{
+  "name": "wordo",
+  "version": "1.0.0",
+  "description": "A application for keep track of the words.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Jamatul Talukder",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
