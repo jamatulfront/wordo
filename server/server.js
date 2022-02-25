@@ -47,10 +47,8 @@ app.post("/words", (req, res) => {
       found.push(word);
     }
   }
-  if (taken === 0)
-    return res
-      .status(400)
-      .json({ msg: "Please give at least one new word to add!" });
+  if (taken < 5)
+    return res.status(400).json({ msg: "Please give enough new word to add!" });
   entry.words = entryWords;
   days.push(entry);
   try {

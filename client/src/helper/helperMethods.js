@@ -11,6 +11,6 @@ export function divideInChunk(array, size) {
       p = 0;
     }
   }
-  if (!innerArray.length) chunkedArray.push(innerArray);
+  if (!innerArray.length === 0) chunkedArray.push(innerArray);
   return chunkedArray;
 }

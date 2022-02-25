@@ -19,6 +19,7 @@ export const Card = styled.div`
   &:not(:last-child) {
     margin-right: 10px;
   }
+  text-transform: uppercase;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -26,10 +27,12 @@ export const Card = styled.div`
   font-weight: 500;
   color: #171717;
   background: ${({ color }) => color};
+  margin-bottom: 10px;
 `;
 export const Heading = styled.h1`
   font-size: 24px;
   color: #282828;
+  font-weight: 400;
   position: relative;
   &::after {
     content: "";
@@ -44,7 +47,7 @@ export const Heading = styled.h1`
 `;
 export const Item = styled.li`
   margin: 5px 0;
-  text-transform: uppercase;
+  font-weight: 600;
 `;
 export const List = styled.ul`
   margin: 0;

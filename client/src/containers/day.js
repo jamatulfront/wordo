@@ -39,6 +39,7 @@ export default function DayContainer({ ...restProps }) {
           </Day.Row>
         </Day>
       ))}
+      {days.length === 0 && <h3>You haven't listed any day yet !</h3>}
     </Day.Container>
   );
 }
